@@ -1,0 +1,286 @@
+/** ========================
+============================
+@project    : kavaleski
+@version    : 1.0
+@author     : Thiago Aguiar - thiago.aguiar86@gmail.com
+@copyright  : 2017
+============================
+begin
+=========================**/
+
+/** ========================
+@pattern
+=========================**/
+body {
+	font-family: 'Montserrat';
+	font-weight: 400;
+	color: @patternColorText;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-ms-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+p, a, em, i, b, strong, h1, h2, h3, h4, h5, h6, figure, video, img, caption, audio, ul, li, ol, article, table, thead, tbody, th, tr, td {
+	font-size: @patternTextSize;
+	font-weight: normal;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	color: inherit;
+	position: relative;
+}
+ul, li, ol, dt, dl {
+	list-style: none;
+	list-style-type: none;
+}
+strong, b {
+	font-weight: 700;
+}
+img {
+	border: 0;
+	display: block;
+}
+figure {
+	position: relative;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+}
+q:before,
+q:after {
+	 content: '';
+}
+abbr,
+acronym {
+	 border: 0;
+	 font-variant: normal;
+}
+sup {
+	 vertical-align: text-top;
+}
+sub {
+	 vertical-align: text-bottom;
+}
+object[type*='application/gas-events'] {
+	display: none;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {padding: 10px;}
+h1 {
+	font-size: 2.6em;
+	font-weight: 100;
+	color: @patternColorText10;
+	margin: 0;
+	padding: 0;
+}
+.hint {
+	font-weight: normal;
+	color: @patternColorText11;
+}
+h2 {
+	font-size: 1.7em;
+	font-weight: 500;
+	color: @patternColorText4;
+	margin: 10px auto;
+}
+p {
+	font-size: 0.85em;
+	font-weight: 500;
+	line-height: 1.8em;
+	color: @patternColorText4;
+	text-align: justify-all;
+	margin-top: 35px;
+	a {
+		color: @patternColorText6;
+		&:hover {
+			color: @patternColorText6;
+		}
+	}
+}
+section {
+	div {
+		&.col-xs-12 {
+			&:nth-child(1) {
+				padding-left: 35px;
+			}
+		}
+	}
+	&[name="blog"] {
+		p {
+			font-size: 1em;
+		}
+	}
+}
+.row {
+	max-width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+.box {
+	background-color: @patternColorText3;
+	padding: 25px 25px 25px 60px;
+	position: relative;
+}
+.tarje {
+	background-color: @patternColorText;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 30px;
+	left: 0;
+	&.mov {
+		background: url(../img/ico-mov.png) center center no-repeat;
+		background-color: @patternColorText7;
+	}
+	&.picture {
+		background: url(../img/ico-picture.png) center center no-repeat;
+		background-color: @patternColorText8;
+	}
+	&.article {
+		background: url(../img/ico-article.png) center center no-repeat;
+		background-color: @patternColorText9;
+	}
+}
+.fixed {
+	min-height: 300px;
+}
+.profile {
+	background-color: black;
+	height: 960px;
+	padding-top: 30px;
+	padding-left: 0;
+	padding-right: 0;
+	img {
+		text-align: center;
+		margin: 0 auto;
+		padding: 0;
+		display: block;
+	}
+	nav {
+		width: 100%;
+		padding: 30px 0;
+		float: left;
+		ul {
+			width: 100%;
+			float: left;
+			li {
+				display: block;
+				a {
+					-webkit-transition: all .5s ease;
+					-moz-transition: all .5s ease;
+					-ms-transition: all .5s ease;
+					-o-transition: all .5s ease;
+					transition: all .5s ease;
+
+					border-left: 4px solid transparent;
+					font-weight: 500;
+					text-decoration: none;
+					color: @patternColorText2;
+					padding: 5px 20px 5px 15px;
+					display: block;
+					&:before {
+						content: '';
+						background-color: gray;
+						width: 30px;
+						height: 30px;
+						margin: 0 15px 0 0;
+						display: inline-block;
+						vertical-align: middle;
+					}
+					span {
+						display: inline-block;
+						vertical-align: middle;
+					}
+					&:hover {
+						background-color: @patternColorText12;
+						border-left: 4px solid @patternColorText13;
+					}
+				}
+				&.get {
+					a {
+						&:before {
+							background: url(../img/ico-get.png) center center no-repeat;
+						}
+					}
+				}
+				&.change {
+					a {
+						&:before {
+							background: url(../img/ico-change.png) center center no-repeat;
+						}
+					}
+				}
+				&.more {
+					a {
+						&:before {
+							background: url(../img/ico-more.png) center center no-repeat;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.news {
+	padding: 0 0 30px 0;
+	.box {
+		padding-left: 35px;
+	}
+}
+.date {
+	color: @patternColorText5;
+	display: block;
+}
+.play {
+	.box {
+		height: 300px;
+	}
+	img {
+		padding: 0;
+		margin: 0 auto 8px;
+	}
+	nav {
+		background-color: @patternColorText;
+		width: 110px;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: -20px;
+		ul {
+			width: 100%;
+			padding: 0 30px;
+			float: left;
+			li {
+				display: block;
+				padding: 15px 0;
+				a {
+					-webkit-transition: all .5s ease;
+					-moz-transition: all .5s ease;
+					-ms-transition: all .5s ease;
+					-o-transition: all .5s ease;
+					transition: all .5s ease;
+
+					text-decoration: none;
+					text-align: center;
+					display: block;
+					span {
+						font-size: 0.9em;
+						font-weight: 400;
+						color: @patternColorText2;
+						display: block;
+					}
+					&:hover {
+						opacity: 0.5;
+					}
+				}
+			}
+		}
+	}
+}
+/** ========================
+end
+=========================**/

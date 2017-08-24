@@ -1,0 +1,70 @@
+/** ========================
+============================
+@project    : kavaleski
+@version    : 1.0
+@author     : Thiago Aguiar - thiago.aguiar86@gmail.com
+@copyright  : 2017
+============================
+begin
+=========================**/
+@media screen and(max-width: 480px) {
+	body {}
+}
+@media screen and (max-width: 767px) {
+	body {
+		.play {
+			nav {
+				width: 60px;
+				ul {
+					padding: 0;
+					li {
+						padding: 23px 0;
+						img {
+							width: 25px;
+						}
+					}	
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+	body {}
+}
+@media screen and (max-width: 991px) {
+	body {
+		.play {
+			nav {
+				left: 0;
+			}
+		}
+		.fixed {
+			min-height: inherit;
+		}
+	}
+}
+@media screen and (max-width: 1024px) {
+	body {
+		.profile {
+			height: auto;
+			padding-top: 10px;
+		}
+		section {
+			div {
+				&.col-xs-12 {
+					&:nth-child(1) {
+						padding-left: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*retina screen*/
+@media screen (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	body {}
+}
+/** ========================
+end
+=========================**/
